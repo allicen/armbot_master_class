@@ -1,0 +1,21 @@
+<!-- Запуск робота без клавиатуры по команде:  roslaunch armbot_description armbot_npoa.rviz.launch -->
+<!-- Запуск робота с клавиатурой по команде:  roslaunch armbot_description armbot_npoa.rviz.launch keyboard:=true -->
+
+<launch>
+<arg name="keyboard" default="false" />
+
+<param name="robot_description" textfile="$(find armbot_description)/urdf/model_best/armbot.urdf" />
+<param name="file" type="str" value="$(find armbot_description)/urdf/model_best/armbot.urdf" />
+
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find armbot_description)/config/armbot.rviz"/>
+
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <rosparam param="source_list">["joint_states"]</rosparam>
+</node>
+
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+<include file="$(find keyboard_description)/launch/keyboard.launch" if="$(arg keyboard)" />
+<!--<node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" output="screen" />-->
+</launch>
+
