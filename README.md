@@ -1,15 +1,15 @@
 # Мастер-класс по визуализации и симуляции
 
 Требования к оборудованию:
-- ОС - Linux
-- Память
+- ОС - Linux любой версии
+- Свободное место минимум 4 Gb (docker-образ весит 3.8 Gb + собранный проект 139,6 Mb)
 - Установленный docker
 
 Установить Docker с официального сайта или запустить docker-сервер командой <code>dockerd</code>.
 
 ## 0. Склонировать проект
 
-<code>git clone ...</code>
+<code>git clone https://github.com/allicen/armbot_master_class</code>
 
 Перейти в папку проекта armbot_master_class. Armbot_master_class - название корневой папки проекта. Все пути в инструкции ниже, начинающиеся от armbot_master_class, считаем от начала проекта.
 
@@ -17,9 +17,11 @@
 
 1.1. Docker-образ
 
+Всё необходимое окружение (Ubuntu 18.04 и ROS Melodic) собрано в docker-контейнере. 
+
 1 вариант:
 
-- Скачать docker-образ 
+- Скачать docker-образ https://drive.google.com/file/d/1WiPhPMxtE-JzbZK_YnnyPqaBRezsOVfe/view?usp=sharing
 
 - Разархивировать armbot-img.tar.gz: <code>tar -xvf armbot-img.tar.gz</code>
 
@@ -68,7 +70,7 @@
 
 3 терминал:
 
-- Запустить публикацию движений с докером <code>./scripts/armbot.sh start</code>
+- Запустить публикацию движений <code>./scripts/armbot.sh start</code>
 
 
 ====================================================================
