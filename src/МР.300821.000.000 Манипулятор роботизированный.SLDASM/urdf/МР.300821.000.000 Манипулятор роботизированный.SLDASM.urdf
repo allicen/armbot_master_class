@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="МР.300821.000.000 Манипулятор роботизированный.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.71598519110808E-09 2.95460784926068E-08 0.00471164634309819"
+        rpy="0 0 0" />
+      <mass
+        value="0.539924220844728" />
+      <inertia
+        ixx="0.000900127008306627"
+        ixy="2.41090417019009E-11"
+        ixz="-2.74229850497976E-12"
+        iyy="0.000900126622269955"
+        iyz="1.00434637976351E-10"
+        izz="0.00179527912392399" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.000351753993732819 -8.3567663927646E-06 0.0898336974365761"
+        rpy="0 0 0" />
+      <mass
+        value="3.66151948541535" />
+      <inertia
+        ixx="0.00310617918852613"
+        ixy="-1.79346766903033E-10"
+        ixz="-4.26581239585264E-06"
+        iyy="0.00238146240355345"
+        iyz="6.19780770186759E-06"
+        izz="0.00193792228130143" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.529411764705882 0.549019607843137 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.023"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.25"
+      upper="2.25"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.0802989234204302 -0.0313774428885639 0.0170516442881635"
+        rpy="0 0 0" />
+      <mass
+        value="0.270091528613218" />
+      <inertia
+        ixx="0.000249674509569272"
+        ixy="0.000212614890206966"
+        ixz="1.00551545422623E-11"
+        iyy="0.000375748340474235"
+        iyz="-3.1145353157779E-12"
+        izz="0.000606312552798785" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.529411764705882 0.549019607843137 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.017 0.126"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="0"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0914329383955162 -0.0167858155846722 -0.0287545509911822"
+        rpy="0 0 0" />
+      <mass
+        value="0.138752300386757" />
+      <inertia
+        ixx="2.12993376331771E-05"
+        ixy="6.30986992605069E-06"
+        ixz="-3.01004052882981E-10"
+        iyy="0.000240368992862612"
+        iyz="3.13456209550208E-11"
+        izz="0.000256277873413495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="fixed">
+    <origin
+      xyz="0.11065 -0.077347 -0.011298"
+      rpy="3.1416 0 -2.3727" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="0"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.025266504324877 -0.00292723326769553 0.0213987090714587"
+        rpy="0 0 0" />
+      <mass
+        value="0.0428002294983427" />
+      <inertia
+        ixx="5.61420283566018E-06"
+        ixy="2.98503981256174E-06"
+        ixz="-1.49030702309947E-14"
+        iyy="1.03113651752027E-05"
+        iyz="1.9826949058735E-21"
+        izz="1.51155017105664E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="fixed">
+    <origin
+      xyz="0.16 0 -0.0068996"
+      rpy="-3.1416 0 -0.80186" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14159265"
+      upper="3.14159265"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link_end">
+    <inertial>
+      <origin
+        xyz="0.042639052456784 -0.00265741110262963 0.0213989196125615"
+        rpy="0 0 0" />
+      <mass
+        value="0.0563600278017998" />
+      <inertia
+        ixx="3.93235368756174E-06"
+        ixy="-3.1513858392879E-07"
+        ixz="1.01588263910319E-11"
+        iyy="3.24845631975552E-06"
+        iyz="-9.57169867469052E-11"
+        izz="5.89090746213927E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_end.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_end.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_end"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_end" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_grip">
+    <inertial>
+      <origin
+        xyz="0.00255411407381756 -0.000617197035658973 -0.018924780194004"
+        rpy="0 0 0" />
+      <mass
+        value="0.0557728067893343" />
+      <inertia
+        ixx="3.92728176216125E-06"
+        ixy="-2.61102891070245E-12"
+        ixz="3.15138580124354E-07"
+        iyy="5.88583553323263E-06"
+        iyz="9.57169866913753E-11"
+        izz="3.247900742803E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_grip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://МР.300821.000.000 Манипулятор роботизированный.SLDASM/meshes/link_grip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_grip"
+    type="revolute">
+    <origin
+      xyz="0.040079 -0.0215 0.022016"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_end" />
+    <child
+      link="link_grip" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.570796325"
+      upper="1.570796325"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+</robot>
