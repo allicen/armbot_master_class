@@ -3,7 +3,7 @@
     name="model" />
   <param
     name="robot_description"
-    textfile="$(find МР.300821.000.000 Манипулятор роботизированный.SLDASM)/urdf/МР.300821.000.000 Манипулятор роботизированный.SLDASM.urdf" />
+    textfile="$(find armbot_description)/urdf/armbot_description.urdf" />
   <node
     name="joint_state_publisher_gui"
     pkg="joint_state_publisher_gui"
@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find МР.300821.000.000 Манипулятор роботизированный.SLDASM)/urdf.rviz" />
+    args="-d $(find armbot_description)/urdf.rviz" />
 </launch>

@@ -1,10 +1,10 @@
 <package format="2">
-  <name>МР.300821.000.000 Манипулятор роботизированный.SLDASM</name>
+  <name>armbot_description</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for МР.300821.000.000 Манипулятор роботизированный.SLDASM</p>
+    <p>URDF Description package for armbot_description</p>
     <p>This package contains configuration data, 3D models and launch files
-for МР.300821.000.000 Манипулятор роботизированный.SLDASM robot</p>
+for armbot_description robot</p>
   </description>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />

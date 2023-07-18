@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(МР.300821.000.000 Манипулятор роботизированный.SLDASM)
+project(armbot_description)
 
 find_package(catkin REQUIRED)
 
