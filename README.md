@@ -25,13 +25,12 @@
 <a name="nav"></a>
 ## Навигация по разделам
 
-- <a href="https://github.com/allicen/armbot_master_class/tree/step1">Шаг 1 (загрузка модели робота из SolidWorks)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step2">Шаг 2 (добавление модели робота в rViz)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step3">Шаг 3 (добавление модели робота в Gazebo из URDF, добавление mesh-модели в виде маркера)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step4">Шаг 4 (создание мира в Gazebo - встроенные возможности, добавление объектов и текстур)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step5">Шаг 5 (пакет MoveIt!, создание конфигов робота)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step6">Шаг 6 (управление роботом в rViz и в Gazebo)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step7">Шаг 7 (добавление сенсоров в Gazebo, получение и обработка данных с камер на OpenCV)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step1">Шаг 1 (загрузка модели робота из SolidWorks, добавление в rViz)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step2">Шаг 2 (добавление модели робота в Gazebo из URDF, добавление mesh-модели в виде маркера)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step3">Шаг 3 (создание мира в Gazebo - встроенные возможности, добавление объектов и текстур)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step4">Шаг 4 (пакет MoveIt!, создание конфигов робота)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step5">Шаг 5 (управление роботом в rViz и в Gazebo)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step6">Шаг 6 (добавление сенсоров в Gazebo, получение и обработка данных с камер на OpenCV)</a>
 
 
 =========================================
@@ -83,7 +82,7 @@
 
 Переходите по <a href="#nav">разделам навигации</a>, там будут указаны шаги по запуску управления роботом для реализации того или иного шага.
 
-#### Шаг 1
+#### Шаг 1 (загрузка модели робота из SolidWorks, добавление в rViz)
 
 Перейти в корень проекта. Открыть терминал.
 
