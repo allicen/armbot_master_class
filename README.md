@@ -93,3 +93,4 @@
 - Запустить модель робота:
   1) просто модель <code>roslaunch armbot_description display.launch</code>
   2) модель с клавиатурой <code>roslaunch armbot_description display.launch keyboard:=true</code>
+  3) модель в Gazebo (то, что сгенерировал плагин из SolidWorks) <code>roslaunch armbot_description gazebo.launch</code>
