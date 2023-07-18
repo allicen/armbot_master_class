@@ -91,4 +91,6 @@
 - Перейти в рабочую директорию <code>cd workspace</code>
 - Собрать проект <code>catkin_make</code> (если будут ошибки сборки, можно попробовать собрать пакеты изолированно <code>catkin_make_isolated</code>)
 - Прописать пути <code>source devel/setup.bash</code>
-- Запустить модель робота <code>roslaunch armbot_description display.launch</code>
+- Запустить модель робота:
+  1) просто модель <code>roslaunch armbot_description display.launch</code>
+  2) модель с клавиатурой <code>roslaunch armbot_description display.launch keyboard:=true</code>
