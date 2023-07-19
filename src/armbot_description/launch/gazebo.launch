@@ -1,4 +1,6 @@
-<launch>
+<!-- Файл, который выгружен из SolidWorks -->
+
+<!-- <launch>
   <include
     file="$(find gazebo_ros)/launch/empty_world.launch" />
   <node
@@ -17,4 +19,47 @@
     pkg="rostopic"
     type="rostopic"
     args="pub /calibrated std_msgs/Bool true" />
+</launch> -->
+
+
+<!-- Новый файл -->
+
+<launch>
+
+  <!-- Загрузка конфигов контроллера -->
+  <rosparam command="load" file="$(find armbot_description)/config/ros_controllers.yaml" />
+
+  <!-- Пути до моделей -->
+  <param name="robot_description" textfile="$(find armbot_description)/urdf/armbot_description.gazebo.urdf" />
+
+  <param name="keyboard_description" textfile="$(find keyboard_description)/urdf/keyboard.xacro" />
+
+  <param name="use_controller_manager" value="false" />
+  <param name="trajectory_execution/execution_duration_monitoring" value="false" />
+
+  <!-- Загрузка мира -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find armbot_description)/worlds/scene.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+
+  <!-- Загрузка моделей -->
+<!--   <node name="armbot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model armbot -param robot_description -z 0.965"/> -->
+<node name="armbot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model armbot -param robot_description"/>
+
+  <node name="keyboard" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model keyboard -param keyboard_description -x 0.05 -z 0.967"/>
+
+  <!-- Загрузка контроллеров -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/armbot" args="
+    --namespace=/armbot
+    arm_controller
+    joint_state_controller
+    --timeout 20
+   "/>
+
 </launch>
