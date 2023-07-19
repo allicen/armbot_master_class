@@ -74,122 +74,8 @@
       <uri>model://grass_plane</uri>
     </include>
 
-<!--     <model name="cube0">
-      <static>true</static>
-      <pose>0.148605 0.074792 0.970 0 0 0</pose>
-      <allow_auto_disable>1</allow_auto_disable>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.435294 0.796078 0.67451 1</ambient>
-          </material>
-        </visual>
-      </link>
-    </model> -->
 
-<!--     <model name="cube1">
-      <static>true</static>
-      <pose>0.123347 -0.027777 0.970 0 0 0</pose>
-      <allow_auto_disable>1</allow_auto_disable>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.68 -0.20 0.179 1</ambient>
-          </material>
-        </visual>
-      </link>
-    </model>
- -->
-<!--     <model name="cube2">
-      <static>true</static>
-      <pose>0.101519 -0.098620 0.970 0 0 -0.7</pose>
-      <allow_auto_disable>1</allow_auto_disable>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.39 0.210 0.27 1</ambient>
-          </material>
-        </visual>
-      </link>
-    </model> -->
-
-<!--     <model name="cube3">
-      <static>true</static>
-      <pose>0.134862 -0.060991 0.970 0 0 0.3</pose>
-      <allow_auto_disable>1</allow_auto_disable>
-      <link name="link">
-        <collision name="collision">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-        </collision>
-        <visual name="visual">
-          <geometry>
-            <box>
-              <size>0.01 0.01 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-            <ambient>0.210 0.27 0.27 1</ambient>
-          </material>
-        </visual>
-      </link>
-    </model> -->
-
+<!-- Объекты сцены -->
 <!-- Трава -->
 <!--     <model name="ground_plane">
       <static>true</static>
@@ -224,122 +110,7 @@
     </model> -->
 
 
-<!--     <model name='tree_simple0'>
-      <static>1</static>
-      <link name='link'>
-        <pose frame=''>0 0 0.1 0 -0 0</pose>
-        <collision name='collision_trunk'>
-          <pose frame=''>0 0 2 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.25</radius>
-              <length>4</length>
-            </cylinder>
-          </geometry>
-        </collision>
-        <collision name='collision_treetop'>
-          <pose frame=''>0 0 5.2 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>1.5</radius>
-            </sphere>
-          </geometry>
-        </collision>
-        <visual name='trunk'>
-          <pose frame=''>0 0 2 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.25</radius>
-              <length>4</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
-              <name>TreeSimple/Trunk</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='treetop'>
-          <pose frame=''>0 0 5.2 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>1.5</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
-              <name>TreeSimple/Treetop</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>5.810792 25.141045 0.173230 0 -0 0</pose>
-    </model> -->
-
-<!--     <model name='tree_simple1'>
-      <static>1</static>
-      <link name='link'>
-        <pose frame=''>0 0 0.1 0 -0 0</pose>
-        <collision name='collision_trunk'>
-          <pose frame=''>0 0 2 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.25</radius>
-              <length>4</length>
-            </cylinder>
-          </geometry>
-        </collision>
-        <collision name='collision_treetop'>
-          <pose frame=''>0 0 5.2 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>1.5</radius>
-            </sphere>
-          </geometry>
-        </collision>
-        <visual name='trunk'>
-          <pose frame=''>0 0 2 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.25</radius>
-              <length>4</length>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
-              <name>TreeSimple/Trunk</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='treetop'>
-          <pose frame=''>0 0 5.2 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>1.5</radius>
-            </sphere>
-          </geometry>
-          <material>
-            <script>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
-              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
-              <name>TreeSimple/Treetop</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-1.183712 47.807770 0.173230 0 -0 0</pose>
-    </model> -->
-
+<!-- Комната -->
 <!--     <model name='room'>
       <pose frame=''>0.177078 0.135937 0 0 -0 0</pose>
       <link name='Wall_0'>
@@ -669,7 +440,124 @@
       <static>1</static>
     </model> -->
 
+<!-- Деревья -->
+<!--     <model name='tree_simple0'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0.1 0 -0 0</pose>
+        <collision name='collision_trunk'>
+          <pose frame=''>0 0 2 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.25</radius>
+              <length>4</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name='collision_treetop'>
+          <pose frame=''>0 0 5.2 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>1.5</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name='trunk'>
+          <pose frame=''>0 0 2 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.25</radius>
+              <length>4</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
+              <name>TreeSimple/Trunk</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='treetop'>
+          <pose frame=''>0 0 5.2 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>1.5</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
+              <name>TreeSimple/Treetop</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>5.810792 25.141045 0.173230 0 -0 0</pose>
+    </model> -->
 
+<!--     <model name='tree_simple1'>
+      <static>1</static>
+      <link name='link'>
+        <pose frame=''>0 0 0.1 0 -0 0</pose>
+        <collision name='collision_trunk'>
+          <pose frame=''>0 0 2 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.25</radius>
+              <length>4</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <collision name='collision_treetop'>
+          <pose frame=''>0 0 5.2 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>1.5</radius>
+            </sphere>
+          </geometry>
+        </collision>
+        <visual name='trunk'>
+          <pose frame=''>0 0 2 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.25</radius>
+              <length>4</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
+              <name>TreeSimple/Trunk</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='treetop'>
+          <pose frame=''>0 0 5.2 0 -0 0</pose>
+          <geometry>
+            <sphere>
+              <radius>1.5</radius>
+            </sphere>
+          </geometry>
+          <material>
+            <script>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/scripts</uri>
+              <uri>/workspace/src/armbot_description/worlds/models/tree/materials/textures</uri>
+              <name>TreeSimple/Treetop</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-1.183712 47.807770 0.173230 0 -0 0</pose>
+    </model> -->
+
+<!--  Стол -->
 <!--     <model name="table">
       <static>true</static>
       <pose>0 0 0.648 0 0 0</pose>
@@ -696,6 +584,123 @@
               <uri>/workspace/src/armbot_description/worlds/models/table/materials/textures</uri>
               <name>Table/Marble_Lightmap</name>
             </script>
+          </material>
+        </visual>
+      </link>
+    </model> -->
+
+<!-- Объекты на столе -->
+<!--     <model name="cube0">
+      <static>true</static>
+      <pose>0.148605 0.074792 0.970 0 0 0</pose>
+      <allow_auto_disable>1</allow_auto_disable>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.435294 0.796078 0.67451 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model> -->
+
+<!--     <model name="cube1">
+      <static>true</static>
+      <pose>0.123347 -0.027777 0.970 0 0 0</pose>
+      <allow_auto_disable>1</allow_auto_disable>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.68 -0.20 0.179 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+ -->
+<!--     <model name="cube2">
+      <static>true</static>
+      <pose>0.101519 -0.098620 0.970 0 0 -0.7</pose>
+      <allow_auto_disable>1</allow_auto_disable>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.39 0.210 0.27 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model> -->
+
+<!--     <model name="cube3">
+      <static>true</static>
+      <pose>0.134862 -0.060991 0.970 0 0 0.3</pose>
+      <allow_auto_disable>1</allow_auto_disable>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.210 0.27 0.27 1</ambient>
           </material>
         </visual>
       </link>
