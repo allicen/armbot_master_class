@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot name="armbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:include filename="$(find armbot_description)/urdf/camera.gazebo" />
+    <xacro:include filename="$(find armbot_description)/urdf/model_best/camera.gazebo" />
     <xacro:include filename="$(find armbot_description)/urdf/materials/materials.xacro" />
     <link name="world" />
     <joint name="joint1_world" type="fixed">
@@ -19,14 +19,14 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/base_link.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/base_link.STL" />
             </geometry>
             <material name="BlueLight"/>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/base_link.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/base_link.STL" />
             </geometry>
         </collision>
     </link>
@@ -42,13 +42,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_1.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_1.STL" />
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_1.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_1.STL" />
             </geometry>
         </collision>
     </link>
@@ -71,14 +71,14 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_2.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_2.STL" />
             </geometry>
             <material name="black" />
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_2.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_2.STL" />
             </geometry>
         </collision>
     </link>
@@ -101,13 +101,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_3.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_3.STL" />
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_3.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_3.STL" />
             </geometry>
         </collision>
     </link>
@@ -130,13 +130,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_4.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_4.STL" />
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_4.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_4.STL" />
             </geometry>
         </collision>
     </link>
@@ -159,13 +159,13 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_end.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_end.STL" />
             </geometry>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://armbot_description/meshes/link_end.STL" />
+                <mesh filename="package://armbot_description/meshes/model_best/link_end.STL" />
             </geometry>
         </collision>
     </link>

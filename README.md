@@ -28,9 +28,8 @@
 - <a href="https://github.com/allicen/armbot_master_class/tree/step1">Шаг 1 (загрузка модели робота из SolidWorks, добавление в rViz)</a>
 - <a href="https://github.com/allicen/armbot_master_class/tree/step2">Шаг 2 (добавление модели робота в Gazebo из URDF, добавление mesh-модели в виде маркера)</a>
 - <a href="https://github.com/allicen/armbot_master_class/tree/step3">Шаг 3 (создание мира в Gazebo - встроенные возможности, добавление объектов и текстур)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step4">Шаг 4 (пакет MoveIt!, создание конфигов робота)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step5">Шаг 5 (управление роботом в rViz и в Gazebo)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step6">Шаг 6 (добавление сенсоров в Gazebo, получение и обработка данных с камер на OpenCV)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step4">Шаг 4 (управление роботом в rViz и в Gazebo)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step5">Шаг 5 (добавление сенсоров в Gazebo, получение и обработка данных с камер на OpenCV)</a>
 
 
 =========================================
@@ -82,13 +81,56 @@
 
 Переходите по <a href="#nav">разделам навигации</a>, там будут указаны шаги по запуску управления роботом для реализации того или иного шага.
 
-#### Шаг 3 (создание мира в Gazebo - встроенные возможности, добавление объектов и текстур)
+#### Шаг 4 (управление роботом в rViz и в Gazebo)
 
-Перейти в корень проекта. Открыть терминал.
+Перейти в корень проекта.
+
+
+
+##### Демонстрация в rViz
+
+##### 1 терминал (запуск модели)
 
 - Запустить docker-контейнер с окружением для робота: <code>sudo ./scripts/docker/run_armbot_docker.sh</code>
 - Перейти в рабочую директорию <code>cd workspace</code>
 - Собрать проект <code>catkin_make</code> (если будут ошибки сборки, можно попробовать собрать пакеты изолированно <code>catkin_make_isolated</code>)
 - Прописать пути <code>source devel/setup.bash</code>
-- Запустить модель робота:
-  1) обновленная модель в Gazebo (то, что сгенерировал плагин из SolidWorks) <code>roslaunch armbot_description gazebo.launch</code>
+- Запустить модель робота в rViz <code>roslaunch armbot_description armbot_best.rviz.launch</code>
+
+
+##### 2 терминал (запуск управления движениями)
+- Перейти в docker-контейнер <code>sudo docker exec -ti armbot bash</code>
+- Перейти в рабочую директорию <code>cd workspace</code>
+- Прописать пути <code>source devel/setup.bash</code>
+- Запустить модель в rViz <code>roslaunch armbot_move move.rviz.launch</code>
+
+
+##### 3 терминал (публикация движений)
+- Запустить управление движением <code>./scripts/armbot.sh start</code>
+
+
+##### Демонстрация в Gazebo
+##### 1 терминал (запуск модели)
+
+- Запустить docker-контейнер с окружением для робота: <code>sudo ./scripts/docker/run_armbot_docker.sh</code>
+- Перейти в рабочую директорию <code>cd workspace</code>
+- Собрать проект <code>catkin_make</code> (если будут ошибки сборки, можно попробовать собрать пакеты изолированно <code>catkin_make_isolated</code>)
+- Прописать пути <code>source devel/setup.bash</code>
+- Запустить модель робота в rViz <code>roslaunch armbot_description gazebo.launch</code>
+
+##### 2 терминал (запуск управления движениями)
+- Перейти в docker-контейнер <code>sudo docker exec -ti armbot bash</code>
+- Перейти в рабочую директорию <code>cd workspace</code>
+- Прописать пути <code>source devel/setup.bash</code>
+- Запустить модель в rViz <code>roslaunch armbot_move move.gazebo.launch</code>
+
+
+##### 3 терминал (запуск управления камерами)
+- Перейти в docker-контейнер <code>sudo docker exec -ti armbot bash</code>
+- Перейти в рабочую директорию <code>cd workspace</code>
+- Прописать пути <code>source devel/setup.bash</code>
+- Запустить модель в rViz <code>roslaunch armbot_camera camera.launch</code>
+
+
+##### 4 терминал (публикация движений)
+- Запустить управление движением <code>./scripts/armbot.sh start</code>

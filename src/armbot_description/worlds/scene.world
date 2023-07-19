@@ -56,7 +56,7 @@
       <real_time>25 461046791</real_time>
       <wall_time>1609085578 807120527</wall_time>
       <iterations>25176</iterations>
-<!--       <model name='Scene'>
+      <model name='Scene'>
         <pose frame=''>0.404556 -0.01074 -0.163868 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_0'>
@@ -65,7 +65,7 @@
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
-      </model> -->
+      </model>
       <light name='sun'>
         <pose frame=''>0 0 30 0 -0 0</pose>
       </light>
@@ -77,7 +77,7 @@
 
 <!-- Объекты сцены -->
 <!-- Трава -->
-<!--     <model name="ground_plane">
+    <model name="ground_plane">
       <static>true</static>
       <link name="link">
         <collision name="collision">
@@ -107,11 +107,11 @@
           </geometry>
         </visual>
       </link>
-    </model> -->
+    </model>
 
 
 <!-- Комната -->
-<!--     <model name='room'>
+    <model name='room'>
       <pose frame=''>0.177078 0.135937 0 0 -0 0</pose>
       <link name='Wall_0'>
         <pose frame=''>-0.007675 1.675 0 0 -0 0</pose>
@@ -438,10 +438,10 @@
         <pose frame=''>-0 -0 0 0 -0 3.14159</pose>
       </link>
       <static>1</static>
-    </model> -->
+    </model>
 
 <!-- Деревья -->
-<!--     <model name='tree_simple0'>
+    <model name='tree_simple0'>
       <static>1</static>
       <link name='link'>
         <pose frame=''>0 0 0.1 0 -0 0</pose>
@@ -497,9 +497,9 @@
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>5.810792 25.141045 0.173230 0 -0 0</pose>
-    </model> -->
+    </model>
 
-<!--     <model name='tree_simple1'>
+    <model name='tree_simple1'>
       <static>1</static>
       <link name='link'>
         <pose frame=''>0 0 0.1 0 -0 0</pose>
@@ -555,10 +555,10 @@
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>-1.183712 47.807770 0.173230 0 -0 0</pose>
-    </model> -->
+    </model>
 
 <!--  Стол -->
-<!--     <model name="table">
+    <model name="table">
       <static>true</static>
       <pose>0 0 0.648 0 0 0</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -587,10 +587,10 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
 <!-- Объекты на столе -->
-<!--     <model name="cube0">
+    <model name="cube0">
       <static>true</static>
       <pose>0.148605 0.074792 0.970 0 0 0</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -617,9 +617,9 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
-<!--     <model name="cube1">
+    <model name="cube1">
       <static>true</static>
       <pose>0.123347 -0.027777 0.970 0 0 0</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -647,8 +647,8 @@
         </visual>
       </link>
     </model>
- -->
-<!--     <model name="cube2">
+
+    <model name="cube2">
       <static>true</static>
       <pose>0.101519 -0.098620 0.970 0 0 -0.7</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -675,9 +675,9 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
-<!--     <model name="cube3">
+    <model name="cube3">
       <static>true</static>
       <pose>0.134862 -0.060991 0.970 0 0 0.3</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -704,9 +704,9 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
-<!--     <model name="cup">
+    <model name="cup">
       <static>true</static>
       <pose>0.063149 0.223087 0.970 0 0 0</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -735,9 +735,9 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
-<!--     <model name="pencil0">
+    <model name="pencil0">
       <static>true</static>
       <pose>-0.185189 -0.179160 0.970 0 0 -1.87</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -765,9 +765,9 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
-<!--     <model name="pencil1">
+    <model name="pencil1">
       <static>true</static>
       <pose>-0.195189 -0.199160 0.970 0 0 -1.55</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -795,9 +795,9 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
 
-<!--     <model name="book">
+    <model name="book">
       <static>true</static>
       <pose>-0.445892 0.289031 0.970 0 0 -1.3</pose>
       <allow_auto_disable>1</allow_auto_disable>
@@ -825,6 +825,6 @@
           </material>
         </visual>
       </link>
-    </model> -->
+    </model>
   </world>
 </sdf>
