@@ -1,6 +1,7 @@
 <launch>
   <arg
     name="model" />
+  <arg name="keyboard" default="false" />
   <param
     name="robot_description"
     textfile="$(find armbot_description)/urdf/armbot_description.urdf" />
@@ -17,4 +18,5 @@
     pkg="rviz"
     type="rviz"
     args="-d $(find armbot_description)/config/armbot.rviz" />
+  <include file="$(find keyboard_description)/launch/keyboard.launch" if="$(arg keyboard)" />  
 </launch>
