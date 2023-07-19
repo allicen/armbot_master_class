@@ -5,11 +5,15 @@
 Предварительная подготовка:
 
 1) Необходима модель робота в SolidWorks
-2) В SolidWorks необходимо установить плагин для экспорта модели робота в URDF: "<a href="http://wiki.ros.org/sw_urdf_exporter">SolidWorks to URDF Exporter</a>" (чтобы плагин заработал, Solidworks должен быть установлен в папку по умолчанию на диске C)
+2) В SolidWorks необходимо установить плагин для экспорта модели робота в URDF: "<a href="http://wiki.ros.org/sw_urdf_exporter">SolidWorks to URDF Exporter</a>" (чтобы плагин заработал, SolidWorks должен быть установлен в папку по умолчанию на диске C)
 3) В модели робота в SolidWorks необходимо расставить системы координат
 4) Выгрузить модель робота с помощью плагина "SolidWorks to URDF Exporter"
 
-Видео, как сделать предыдущие шаги: (будет позднее).
+Видео:
+- модель робота https://drive.google.com/file/d/1Sa0DZhuXO_XzKxlu9IbdkdT--rkhxbaI/view?usp=sharing
+- расстановка системы координат https://drive.google.com/file/d/13UAgYBlZ4exlPWKb4C40eKCoWtPcW3Xc/view?usp=sharing
+- пример, как установить систему координат https://drive.google.com/file/d/1t1RHBu-BO24C0cOX4EQU4zvKLbCPdeFC/view?usp=sharing
+- формирование и выгрузка URDF-файла https://drive.google.com/file/d/1PEqN2CeuRYTzc6eWTYtP18fKNuXYs_MC/view?usp=sharing
 
 Пример модели робота: 
 - https://github.com/maxosprojects/dobot-arm-CAD
@@ -28,9 +32,7 @@
 - <a href="https://github.com/allicen/armbot_master_class/tree/step1">Шаг 1 (загрузка модели робота из SolidWorks, добавление в rViz)</a>
 - <a href="https://github.com/allicen/armbot_master_class/tree/step2">Шаг 2 (добавление модели робота в Gazebo из URDF, добавление mesh-модели в виде маркера)</a>
 - <a href="https://github.com/allicen/armbot_master_class/tree/step3">Шаг 3 (создание мира в Gazebo - встроенные возможности, добавление объектов и текстур)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step4">Шаг 4 (пакет MoveIt!, создание конфигов робота)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step5">Шаг 5 (управление роботом в rViz и в Gazebo)</a>
-- <a href="https://github.com/allicen/armbot_master_class/tree/step6">Шаг 6 (добавление сенсоров в Gazebo, получение и обработка данных с камер на OpenCV)</a>
+- <a href="https://github.com/allicen/armbot_master_class/tree/step4">Шаг 4 (управление роботом в rViz и в Gazebo, вывод изображений с камер)</a>
 
 
 =========================================
