@@ -82,7 +82,7 @@
 
 Переходите по <a href="#nav">разделам навигации</a>, там будут указаны шаги по запуску управления роботом для реализации того или иного шага.
 
-#### Шаг 2 (добавление модели робота в Gazebo из URDF, добавление mesh-модели в виде маркера)
+#### Шаг 3 (создание мира в Gazebo - встроенные возможности, добавление объектов и текстур)
 
 Перейти в корень проекта. Открыть терминал.
 
@@ -91,6 +91,4 @@
 - Собрать проект <code>catkin_make</code> (если будут ошибки сборки, можно попробовать собрать пакеты изолированно <code>catkin_make_isolated</code>)
 - Прописать пути <code>source devel/setup.bash</code>
 - Запустить модель робота:
-  1) просто модель <code>roslaunch armbot_description display.launch</code>
-  2) модель с клавиатурой <code>roslaunch armbot_description display.launch keyboard:=true</code>
-  3) модель в Gazebo (то, что сгенерировал плагин из SolidWorks) <code>roslaunch armbot_description gazebo.launch</code>
+  1) обновленная модель в Gazebo (то, что сгенерировал плагин из SolidWorks) <code>roslaunch armbot_description gazebo.launch</code>
