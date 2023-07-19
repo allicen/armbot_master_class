@@ -84,3 +84,15 @@
 ### 2. Запуск робота
 
 Переходите по <a href="#nav">разделам навигации</a>, там будут указаны шаги по запуску управления роботом для реализации того или иного шага.
+
+
+#### Базовые команды
+
+##### 1 терминал
+- Запустить docker-контейнер с окружением для робота: <code>sudo ./scripts/docker/run_armbot_docker.sh</code>
+- Перейти в рабочую директорию <code>cd workspace</code>
+- Собрать проект <code>catkin_make</code> (если будут ошибки сборки, можно попробовать собрать пакеты изолированно <code>catkin_make_isolated</code>)
+- Прописать пути <code>source devel/setup.bash</code>
+
+##### 2 терминал
+- Перейти в docker-контейнер <code>sudo docker exec -ti armbot bash</code>
